@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"> 
+   
+    <title>Contact Us Form</title>
+    
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <script src="https://kit.fontawesome.com/bd8e46d914.js" crossorigin="anonymous"></script>
+
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+        /* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --color-main : #6c63ff;
+    --color-bg : #1f2641;
+    --color-bg1 : #2e3267;
+    --color-bg2 : #424890;
+    --color-white : #fff;
+    --color-org : #f75842;
+    --color-grn : #00bf8e;
+    --color-yllw : #f7c94b;
+    --color-light : rgba(255,255,255,0.7);
+    --transit : all 400ms ease;
+}
+body{
+    background-color: var(--color-bg);
+    font-family: 'poppins' ,sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    width: 98.9vw;
+}
+.cont{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    padding: 6rem 0;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+    color: var(--color-white);
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+a{
+    color: var(--color-white);
+}
+p{
+    color: var(--color-white);
+}
+.main-but{
+    background-color: var(--color-org);
+    padding: 1rem ;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    transition: var(--transit);    
+}
+.main-but:hover{
+    border: 2px solid var(--color-white);
+}
+
+
+/* nav bar start*/
+.navbg{
+    background-color: var(--color-main);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+nav{
+  position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(17, 24, 39, 1);
+    transition: var(--transit);
+    box-shadow: inset 0 3rem 3rem rgba(0,0,0,0.2);
+}
+.nav__cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav-list a{
+    transition: var(--transit);
+}
+.nav-list a:hover{
+    color: var(--color-bg2);
+}
+
+/* nav bar end */
+
+.main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container{
+  margin-top: 5.5rem;
+    height: 85%;
+  width: 60%;
+  background: rgba(17, 24, 39, 1);
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+}
+.container .content .right-side{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  width: 75%;
+  margin-left: 75px;
+}
+.font {
+   color: #fff;
+}
+.content .right-side .topic-text{
+    text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family:  Georgia, serif;
+  color: #fff;
+}
+.right-side .input-box{
+    font-size: 1rem;
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(27, 43, 78, 0.683);
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+  color: var(--color-white);
+  border: 1px solid transparent;
+  transition: var(--transit);
+}
+.right-side .input-box input:hover,
+.right-side .input-box textarea:hover{
+  border: 1px solid var(--color-white);
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.topic{
+  color: #fff;
+ 
+}
+.button{
+  width: 50%;
+  margin-left: 45%;
+}
+.right-side .button input[type="button"]{
+height: fit-content;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--color-bg2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: var(--color-bg1);
+}
+
+/* footer */
+
+
+.foot{
+    position: relative;
+    top: 10rem;
+    background-color:rgba(17, 24, 39, 1);
+    padding: 3rem;
+    height: 17rem;
+}
+.foot h4{
+    margin-bottom: 1rem;
+}
+.foot__cont{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    /* align-items: center; */
+}
+.foot__socials{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 1.5rem 0 0;
+}
+.foot__socials i{
+    font-size: 1rem;
+    transition: var(--transit);
+}
+.foot__socials i:hover{
+    color: var(--color-main);
+}
+.foot__cont ul li a{
+    font-size: 0.9rem;
+    transition: var(--transit);
+}
+.foot__cont ul li a:hover{
+    text-decoration: underline;
+}
+.foot__1 p{
+    font-size: 0.9rem;
+}
+.copyright{
+    font-size: smaller;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+     </style>
+   </head>
+<body>
+  <nav >
+    <div class="cont nav__cont">
+        <a href=""><h2>STUD!T</h2></a>
+        <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contactus.html">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <div class="cont main">
+
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="ri-home-7-line" class="font"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">NIT Kurukshetra</div>
+            <div class="text-two">Thanesar,Haryana(136119)</div>
+          </div>
+          <div class="phone details">
+            <i class="ri-smartphone-line" class="font"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+91 62022 14007</div>
+            <div class="text-two">+91 93063 17722</div>
+          </div>
+          <div class="email details">
+            <i class="ri-mail-line" class="font"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">12212032@nitkkr.ac.in</div>
+            <div class="text-two">12212028@nitkkr.ac.in</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Contact us </div>
+          <p style="font-size: 0.80rem ;text-align: center; ">Feel free to reach out to us via email or phone for general inquiries, partnership opportunities, or any other matter related to our educational content. Our knowledgeable team is ready to assist you and provide the information you need.</p>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email">
+          </div>
+          <div class="input-box message-box">
+              <textarea  name="text" id="text" cols="30" rows="10" placeholder="Enter your message"></textarea>
+          </div>
+          <div class="button">
+            <input type="button" value="Submit" >
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- footer -->
+
+
+   <footer class="foot">
+    <div class="cont foot__cont">
+        <div class="foot__1">
+            <h4><a href="index.html" class="footer_logo">STUD!T</a></h4>
+            <p>Your one stop solution for <br> all study material.</p>
+        </div>
+
+        <div class="foot__2">
+            <h4>Links</h4>
+            <ul class="Links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="foot__privacy">
+            <h4>Primacy</h4>
+            <ul class="primacy">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms And Conditions</a></li>
+            </ul>
+        </div>
+        <div class="foot__3">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+91 930 456 7890</p>
+                <p>Stud!t@gmail.com</p>
+            </div>
+            <ul class="foot__socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">Copyright &#169; STUD!T All Rights Reserved</p>
+</footer>
+</body>
+</html>
