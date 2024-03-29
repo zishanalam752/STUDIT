@@ -12,4 +12,4 @@ Module - 3 : Profile Page that includes student's academic data
 , downloaded pdfs and a track of a his/her attendance .
 Module – 4 : Complaint Box Page where students can
 raise their issues which can be forwarded 
-to the institute
+to the institute......
